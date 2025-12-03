@@ -1,0 +1,89 @@
+/* Consolidated global stylesheet extracted from component <style> blocks */
+
+/* VocabTest.vue - main */
+.test-container { max-width: 700px; margin: 20px auto; padding: 20px; }
+.start-section { text-align: center; padding: 40px 20px; }
+.start-section .ui.button { display: inline-block; margin: 16px auto 0; }
+.language-selector { text-align: center; margin: 20px 0; }
+.language-selector label { display: block; margin-bottom: 10px; font-weight: bold; }
+.language-selector select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; width: 100%; max-width: 300px; }
+.question-card { background: #f9f9f9; padding: 20px; border-radius: 8px; }
+.english-word { font-size: 28px; font-weight: 700; color: #2185d0; text-align:center; padding: 16px; background:white; border-radius:4px; margin-bottom: 12px; }
+.choices { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.choice-button { text-align: left; }
+.choice-button.selected { outline: 2px solid #2185d0; }
+.choice-button.correct { background: #d4edda; border-color: #c3e6cb; }
+.choice-button.wrong { background: #f8d7da; border-color: #f5c6cb; }
+.feedback { padding: 12px; border-radius: 4px; margin-top: 12px; text-align:center }
+.feedback.correct { background: #d4edda; color: #155724; }
+.feedback.wrong { background: #f8d7da; color: #721c24; }
+.results-detail { text-align:left; margin-top: 12px; }
+.results-detail li { display:flex; gap:10px; padding:8px 0; border-bottom:1px solid #eee; }
+.status.correct { color: #27ae60; }
+.status.wrong { color: #e74c3c; }
+
+/* VocabTest.vue - modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+.modal {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transform: translateY(0);
+}
+.modal h2 { margin-top: 0; }
+.modal .modal-actions { display:flex; gap:10px; justify-content:flex-end; margin-top:16px }
+.modal .results-list { max-height: 240px; overflow:auto; margin-top:12px; border-top:1px solid #eee; padding-top:8px }
+
+/* App.vue global layout */
+#app > div.navbar { margin-bottom: 1.5em; }
+
+#myFlash { width: 250px; margin: 10px; position: absolute; top: 50px; right: 0; }
+
+input { width: 300px; }
+
+div.label { width: 120px; }
+
+div.input { margin-bottom: 10px; }
+
+button.ui.button {text-align: center; margin-top: 15px; display: block; }
+/* Show.vue form styles */
+.field { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+
+label.ui.label { display: flex; align-items: center; height: 42px; padding: 0 14px; font-size: 1rem; }
+
+input[readonly] { background: #f9fafb !important; height: 42px; padding: 0 12px; font-size: 1rem; border-radius: 4px !important; border: 1px solid #d4d4d5 !important; }
+
+/* Words.vue table styles */
+#words.ui.table { width: 700px; margin: 2rem auto 0 auto; }
+#words td, #words th { padding: 0.9rem 1.2rem; }
+#words a { color: #2185d0; }
+#words a:hover { text-decoration: underline; }
+
+/* small utility classes used in multiple places */
+.center-aligned { text-align: center; }
+
+/* End of consolidated stylesheet */
+.status-icon.correct {
+  color: #16a34a;  
+  font-weight: bold;
+}
+
+.status-icon.wrong {
+  color: #dc2626;  
+  font-weight: bold;
+}
+
